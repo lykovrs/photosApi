@@ -1,0 +1,8 @@
+.main
+    .container
+        h2 Recent Photos
+        .row
+            .item.col-md-4(ng-repeat='photo in photos')
+                a(href='#/photos/{{$index}}')
+                    img.img-responsive(ng-src='{{ photo.url }}')
+                    p.author by {{ photo.author }}

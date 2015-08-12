@@ -1,0 +1,8 @@
+.photo
+    .container
+        img(ng-src='{{ detail.url }}')
+        h2.photo-title  {{ detail.title }}
+        p.photo-author  {{ detail.author }}
+        p.photo-views  {{ detail.views | number }}
+        p.photo-upvotes  {{ detail.upvotes }}
+        p.photo-pubdate  {{ detail.pubdate | date }}
